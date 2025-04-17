@@ -1,0 +1,115 @@
+<!--
+/* SCELTA PAESI */
+#countries_cont{
+	position:fixed;
+	display:none;
+	z-index:1000000000;/*1500;*/
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.7);
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+.countriesVis{
+	display:block !important;
+}
+#countries{
+	position:fixed;
+	z-index:1501;
+	padding:20px;
+	background-color:#FFF;
+	width:100%;
+	max-width:600px;
+	box-shadow:0px 0px 10px #000;
+}
+#countries h2{
+	margin-top:0px;
+	margin-bottom:10px;
+}
+#selLinguaMenu{
+	border-bottom:1px solid rgba(0,0,0,0.2);
+	margin-bottom:10px;
+}
+#selLinguaMenu select{
+	height: 32px;
+    border-radius: 6px;
+    padding-left: 10px;
+    background-color: #333;
+    color: #FFF;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+#selLinguaMenu select option{
+	color: #FFF;
+}
+#countries_list a{
+	display:block;
+	line-height:24px;
+	width:calc(100%);
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-decoration:none;
+	border-radius:10px;
+	padding-left:10px;
+	font-size: 15px !important;
+}
+#countries_list a.sel{
+	background-color:rgba(0,0,0,0.1);
+}
+#countries_list a:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+#countries_list a img{
+	height:13px;
+	vertical-align:middle;
+	margin-top:-2px;
+}
+#chiudiCountries{
+	width:50px;
+	height:50px;
+	background-image:url(../images/ch.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	cursor:pointer;
+	float:right;
+	margin-top:-20px;
+	margin-right:-20px;
+}
+#countries_notFound{
+	text-align:center;
+	padding-top:12px;
+	margin-top:10px;
+	border-top:1px solid rgba(0,0,0,0.3);
+	font-size: 15px !important;
+}
+#countries_notFound *{
+	font-size: 15px !important;
+}
+@media (max-width: 600px){
+	#countries{
+		height:100%;
+		overflow-y:auto;
+	}
+	#countries_list{
+		column-count: 2;
+	}
+}
+@media (min-width: 601px){
+	#countries{
+		left:50%;
+		margin-left:-300px;
+		border-radius:10px;
+		height:420px;
+		top:100px;
+	}
+	#countries_list{
+		column-count: 3;
+	}
+}
+-->

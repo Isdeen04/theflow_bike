@@ -1,0 +1,217 @@
+<!--
+
+
+
+
+/* GALLERY delle pagine informative (es. marchi, azienda, ecc.) */
+.imgDX{
+	float:right;
+	margin-left:10px;
+}
+.imgSX{
+	float:left;
+	margin-right:20px;
+}
+.imgDX2{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20px;
+	float:right;
+}
+.imgSX2{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:20px;
+	float:left;
+}
+.imgXbig{
+	cursor:pointer;
+	margin:5px;
+	border-radius:3px;
+	box-shadow:0px 0px 3px #000;
+}
+.imgXbig:hover{
+	box-shadow:0px 0px 5px #C80;
+}
+.imgAppr{
+    box-shadow: 0px 0px 8px #000;
+}
+
+
+
+/* IMMAGINI e ZOOM */
+#zoom_cont{
+	position:fixed;
+	z-index:1000000000;/*1500;*/
+	padding:20px;
+	overflow:hidden;
+	background-color:#FFF;
+	transition:opacity 0.5s;
+	-webkit-transition:opacity 0.5s;
+	
+	opacity:0;
+	width:1px;
+	height:1px;
+	top:-100px;
+	left:-100px;
+}
+.zoomOn{
+	opacity:1 !important;
+	width:100% !important;
+	height:100% !important;
+	top:0px !important;
+	left:0px !important;
+}
+.zoomWait{
+	opacity:1 !important;
+	width:100% !important;
+	height:100% !important;
+	top:0px !important;
+	left:0px !important;
+	opacity:0.7 !important;
+	background-image:url(../images/loading.gif) !important;
+	background-position:center center !important;
+	background-size:auto !important;
+	background-repeat:no-repeat !important;
+	cursor:default !important;
+}
+.zoomWait > div{
+	display:none !important;
+}
+.zoomCh{
+	width:100% !important;
+	height:100% !important;
+	top:0px !important;
+	left:0px !important;
+}
+#zoom{
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	margin:0 auto;
+	cursor:url(../magnify.cur), pointer;
+	transition:width 0.2s, height 0.2s, background-size 0.5s;
+	-webkit-transition:width 0.2s, height 0.2s, background-size 0.5s;
+}
+.zoomC{
+	padding:0px !important;
+}
+.zoomC #zoom{
+	background-size:auto !important;
+}
+.noContain{
+	background-size:initial !important;
+}
+#logoZoom{
+	position:fixed;
+	width:100px;
+	height:70px;
+	top:0px;
+	left:-200px;
+	background:url(../images/logoPiede.png) center center no-repeat;
+	z-index:2000;
+}
+.zoomOn #logoZoom{
+	left:0px !important;
+}
+#chiudiZoom{
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:10px;
+	right:-110px;
+	border-radius:16px;
+	background:url(../images/chZoom.png) center center no-repeat #3b2a1a;
+	box-shadow:0px 0px 4px #000;
+	cursor:pointer;
+	z-index:3000;
+}
+
+#chiudiZoom:hover{
+	background-color:#d91400 !important;
+}
+#zoomFrSx, #zoomFrDx{
+	position:fixed;
+	width:30%;
+	height:100%;
+	top:0px;
+	cursor:pointer;
+	z-index:2999;
+	display:none;
+	opacity:0.2;
+}
+#zoomFrSx:hover, #zoomFrDx:hover{
+	opacity:1 !important;
+}
+#zoomFrSx{
+	background:url(../images/zoomFrSxB2.png) left center no-repeat;
+	left:0px;
+}
+#zoomFrDx{
+	background:url(../images/zoomFrDxB2.png) right center no-repeat;
+	right:0px;
+}
+#carImg{
+	position:absolute;
+	top:-500px;
+	height:-500px;
+	opacity:0;
+}
+.zoomBlack{
+	background-color:#000 !important;
+}
+.zoomBlack #chiudiZoom{
+	background-color:#d91400 !important;
+
+}
+
+@media (max-width: 980px) and (min-width: 781px){
+	#boxFoto{
+		margin-top:0px !important;
+		margin-right:0px !important;
+		margin-bottom:0px !important;
+	}
+	#frFotoSx{
+		margin-left:0px !important;
+	}
+	#boxFoto h2{
+		width: calc(100% - 90px) !important;
+	}
+}
+@media (max-width: 870px){
+	#zoom_cont{
+		padding:0px !important;
+	}
+	#zoom{
+		border-radius:0px !important;
+		margin:0px !important;
+		padding:0px !important;
+	}
+	#foto{
+		top:50px !important;
+	}
+}
+@media (max-width: 780px){
+	.imgAppr{
+		max-width:100%;
+		height:auto !important;
+	}
+}
+@media (max-width: 560px){
+	.imgDX,
+	.imgDX2{
+		float:none !important;
+		margin-left:0px !important;
+		margin-bottom:10px;
+	}
+	.imgSX,
+	.imgSX2{
+		float:none !important;
+		margin-right:0px !important;
+		margin-bottom:10px;
+	}
+}
+-->

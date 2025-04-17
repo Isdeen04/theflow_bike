@@ -1,0 +1,398 @@
+<!--
+
+#sezione{
+	padding-top:89px;
+	padding-bottom: 1px;
+}
+.elenco #sezione{
+	width:100%;
+	background-image:url(../images/f_catsTaglio.png);
+}
+#pagina_cont:not(.pagina_prodotto):not(.elenco) #sezione{
+	width:1050px;
+	margin:0 auto;
+}
+.pagina_prodotto #sezione {
+	padding:10px !important;
+}
+#sezione.presaldi{
+	background-image:url(../images/saldi_f.jpg);
+	background-size:auto 130%;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+#sezione.f_promo{
+	background-size:auto 130%;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+#sezione.f_promo{
+	background-image:url(../images/promo_f_bn.jpg);
+}
+#sezione.f_dream,
+#sezione.f_evi,
+body:not(.vipPage) .elenco #sezione{
+	background-size:cover, auto 130%;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+#sezione.f_ebikes,
+#sezione.c_ebikes{
+	background-image:url(../images/f_dreamTaglio3.png), url(../images/box_ebikes.jpg);
+}
+#sezione.f_mtb,
+#sezione.c_mtb{
+	background-image:url(../images/f_dreamTaglio3.png), url(../images/box_mtb.jpg);
+}
+#sezione.f_road,
+#sezione.c_road{
+	background-image:url(../images/f_dreamTaglio3.png), url(../images/box_road.jpg);
+}
+#sezione.f_gravel,
+#sezione.c_gravel{
+	background-image:url(../images/f_dreamTaglio3.png), url(../images/box_gravel.jpg);
+}
+#sezione.f_evi{
+	background-image:url(../images/f_eviTaglio2.png);
+}
+/*#sezione.f_evi h1{
+	color:#FFF !important;
+}*/
+.sezioneSS{
+	padding-top:450px !important;
+	z-index:10;
+	position:absolute;
+	width:100% !important;
+}
+.sezioneSS *{
+	text-align:center !important;
+	color:#FFF;
+	text-shadow:0px 0px 3px #000;
+	font-size:20px !important;
+}
+
+body.paginaBlack .elenco #sezione{
+	background-image:url(../images/traccia_gommaB.png);
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+body.paginaBlack.Natale .elenco #sezione{
+	background-image: url(../images/fondino_natale.jpg) !important;
+}
+.elenco #sezione h1{
+	margin-top:0px;
+	margin-left:30px;
+}
+.giftcard #sezione h1{
+	text-align:left !important;
+}
+.pagina_prodotto #sezione h1{
+	margin-top:10px;
+}
+
+.pagina_home #sezione *{
+	text-align:center;
+}
+.pagina_home:not(.homeSS) #sezione *{
+	margin-top:317px;
+}
+.occhiello{
+	opacity: 0.8;
+    font-style: italic;
+    padding-right: 5px;
+    color: #444;
+    line-height: 21px;
+    font-weight: normal;
+    font-family: 'futura_lt_btlight', Futura LT BT, sans-serif;
+}
+.elenco .occhiello{
+	margin-top:-20px;
+	margin-bottom:0px;
+	padding-left:50px;
+	font-size:24px;
+}
+@media (min-width: 5010px){
+	.elenco .occhiello{
+		text-shadow: 0 0 6px #FFF, 0 0 3px #FFF, 0 0 2px #FFF;
+	}
+}
+.sottotitolo{
+	opacity:0.8;
+	margin-top:0px !important;
+	padding-right:5px;
+}
+
+.freccina{
+	font-size:16px !important;
+	color:#4c0c71; /* METTERE IL COLORE GIUSTO NELLA PAGINA */
+}
+.freccinaBig{
+	font-size:18px !important;
+	color:#4c0c71; /* METTERE IL COLORE GIUSTO NELLA PAGINA */
+}
+@media (max-width: 1120px){
+	#pagina_cont:not(.elenco):not(.pagina_home):not(.libera) .larga{
+		width:100% !important;
+		padding-left:30px !important;
+		padding-right:30px !important;
+	}
+	.noMini{
+		display:none;
+	}
+	#pagina_cont:not(.pagina_prodotto):not(.elenco):not(.libera) #sezione{
+		width:100%;
+	}
+}
+@media (max-width: 1080px){
+	.pagina_prodotto #sezione{
+		padding-left:30px !important;
+		margin-bottom:0px !important;
+		padding-top:29px !important;
+	}
+	#piede{
+		width:100%;
+	}
+}
+@media (min-width: 981px){
+	.pagina_prodotto #sezione {
+		padding-top: 29px !important;
+    	padding-bottom: 40px !important;
+	}
+}
+@media (max-width: 980px) and (min-width: 501px){
+	.pagina_prodotto #sezione h1{
+		margin-top:30px;
+		margin-bottom:20px;
+	}
+}
+@media (max-width: 980px){
+	.pagina_prodotto #sezione{
+		padding-left:0px !important;
+		padding-bottom:30px !important;
+		margin-left: -30px;
+		margin-right: -30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		width: calc(100% + 60px);
+	}
+	.pagina_prodotto #sezione{
+		padding-top:10px !important;
+		padding-right:0px !important;
+	}
+	.pagina_prodotto #sezione h1{
+		text-align:center;
+	}
+}
+@media (max-width: 870px){
+	.pagina_home #sezione{
+		padding-top:60px !important;
+	}
+	.pagina_prodotto #sezione h1{
+		margin-top:50px;
+	}
+	body:not(.giftcard) #sezione:not(.presaldi):not(.f_promo):not(.f_dream):not(.f_evi) *{
+		text-align:center !important;
+	}
+	.giftcard #sezione h1{
+		padding-left:30px !important;
+	}
+	.elenco #sezione .occhiello{
+		padding-left:0px !important;
+	}
+	.elenco #sezione.presaldi .occhiello{
+		margin-left: 30px;
+	}
+}
+@media (max-width: 780px){
+	#sezione{
+		width:100%;
+	}
+	.sezioneSS{
+		display:none;
+	}
+	#pagina_cont:not(.pagina_prodotto) #sezione{
+		margin-bottom: 0px !important;
+		padding-left: 30px !important;
+		padding-right: 30px;
+		background-position: calc(100% + 250px) center;
+	}
+	#pagina_cont:not(.pagina_prodotto):not(.libera) #sezione{
+		margin-left: -30px !important;
+		margin-right: -30px;
+		width: calc(100% + 60px) !important;
+	}
+	#pagina_cont.libera #sezione{
+		width: 100% !important;
+	}
+	#pagina_cont:not(.pagina_prodotto):not(.elenco):not(.pagina_home):not(.libera) #sezione{
+		padding:0px !important;
+	}
+	.elenco #sezione h1{
+		margin-bottom:0px;
+	}
+	.elenco #sezione .occhiello{
+		margin-top:0px;
+	}
+	#pagina_cont:not(.pagina_home) #sezione{
+		padding-top:69px;
+		padding-bottom:25px !important;
+	}
+	#sezione.presaldi {
+		background-size: 100% !important;
+		background-position: right top !important;
+		background-color: #FFF !important;
+		padding-top:99px !important;
+		padding-bottom:30px !important;
+	}
+	#sezione.presaldi h1{
+		opacity:0;
+	}
+	.f_evi{
+		background-position:85% center !important;
+	}
+}
+@media (max-width: 700px){
+	.pagina_prodotto #sezione{
+		padding-top: 28px !important;
+	}
+	.elenco #sezione:not(.presaldi){
+		padding-top:59px !important;
+		padding-bottom:30px !important;
+	}
+	.giftcard #sezione h1{
+		padding-right:300px !important;
+	}
+}
+@media (min-width: 501px){
+	.crono #sezione h1{
+		padding-left:60px;
+		background:url(../images/ico_crono.png) no-repeat left center;
+		background-size:50px;
+	}
+	.ricerca #sezione h1{
+		padding-left:60px;
+		background:url(../images/ico_ricerca.png) no-repeat left center;
+		background-size:50px;
+	}
+	.ricerca #sezione.f_evi h1,
+	.ricerca #sezione.f_promo h1{
+		background-image:url(../images/ico_promoBig2.png) !important;
+		background-position: left 1px !important;
+	}
+	.ricerca #sezione.f_dream h1{
+		/*background-image:url(../_img/ico_dreamBig.png) !important;*/
+		background-position: left 1px !important;
+	}
+	.ricerca #sezione.f_ebikes h1,
+	.ricerca #sezione.c_ebikes h1{
+		background-image:url(../images/tipoE.png) !important;
+	}
+	.ricerca #sezione.f_mtb h1,
+	.ricerca #sezione.c_mtb h1{
+		background-image:url(../images/tipoM.png) !important;
+	}
+	.ricerca #sezione.f_road h1,
+	.ricerca #sezione.c_road h1{
+		background-image:url(../images/tipoR.png) !important;
+	}
+	.ricerca #sezione.f_gravel h1,
+	.ricerca #sezione.c_gravel h1{
+		background-image:url(../images/tipoG.png) !important;
+	}
+	.ricerca.paginaBlack #sezione h1{
+		background-image:url(../images/ico_ricercaW.png) !important;
+	}
+	.prfs #sezione h1{
+		padding-left:60px;
+		background:url(../images/ico_prfs.png) no-repeat left center;
+		background-size:50px;
+	}
+}
+@media (max-width: 500px){
+	/*#sezione.f_promo{
+		background-position: calc(100% + 68px) center !important;
+	}*/
+	#sezione.f_dream h1,
+	#sezione.f_promo h1,
+	#sezione.f_evi h1{
+		display:block;
+		background-image: none !important;
+    	/*margin-left: -6px !important;*/
+	}
+	/*#sezione.f_promo h1{
+		text-align:left !important;
+		width: calc(100% - 20px) !important;
+	}*/
+	.elenco #sezione:not(.f_dream):not(.f_evi):not(.f_promo):not(.presaldi){
+		/*background: rgb(119,119,119);*/
+		background:radial-gradient(circle, #857f72 15%, rgba(5,5,5,1) 100%) !important;
+		background-position: center !important;
+		background-repeat:no-repeat !important;
+		background-size:auto;
+	}
+
+	.f_dream{
+		/*background: rgb(248, 177, 24);*/
+    	background:url(../images/fDreamMobile2.png), radial-gradient(circle, rgba(248, 177, 24, 1) 40%, rgba(109, 65, 12, 1) 102%) !important;
+		background-position: -30px -10px, center !important;
+		background-repeat:no-repeat !important;
+		background-size:80px, auto;
+	}
+	.f_promo,
+	.f_evi{
+		/*background: rgb(119,119,119);*/
+		background:url(../images/fPromoMobile.png), radial-gradient(circle, #c44e00 35%, #351500 100%) !important;
+		background-position: -30px -10px, center !important;
+		background-repeat:no-repeat !important;
+		background-size:80px, auto;
+	}
+	.f_dream h1,
+	.f_promo h1,
+	.f_evi h1{
+		color: #FFF;
+		padding:0px !important;
+		margin:0px !important;
+		text-align: center !important;
+		width: 100% !important;
+		text-shadow: 0 0 11px #000;
+	}
+	#sezione.f_dream .occhiello{
+		color: #FFF;
+		padding:0px !important;
+		margin:0px !important;
+		text-align: center !important;
+	}
+	
+	.elenco #sezione:not(.f_dream):not(.f_evi):not(.f_promo):not(.presaldi) h1{
+		color: #FFF;
+		text-shadow: 0 0 11px #000;
+	}
+	.elenco #sezione:not(.f_dream):not(.f_evi):not(.f_promo):not(.presaldi) .occhiello{
+		color: rgba(255,255,255,0.6) !important;
+	}
+	.giftcard #sezione h1{
+		padding-right:220px !important;
+	}
+}
+@media (max-width: 420px){
+	.elenco #sezione h1{
+		margin-left:0px;
+	}
+	.crono #sezione h1,
+	.ricerca #sezione h1,
+	.prfs #sezione h1{
+		padding-left:0px !important;
+		background-position:5px center !important;
+		width:calc(100%);
+		margin-left:-30px;
+		margin-right:-30px;
+	}
+	#sezione h1{
+		line-height: 38px;
+	}
+	.elenco #sezione h1{
+		margin: 10px 0 !important;
+	}
+}
+
+-->

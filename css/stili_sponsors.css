@@ -1,0 +1,133 @@
+<!--
+#googleRece{
+	display: block;
+    position: absolute;
+    width: 98px;
+    top: 5px;
+    right: 171px;
+    z-index: 1111;
+    height: 20px;
+    padding: 0px 3px;
+    line-height: 20px;
+    background-image: url(../images/stelleG.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 3px) 1px;
+    background-size: auto 14px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #d5c1a2;
+}
+#googleRece:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+
+#spedGratTop{
+	display: block;
+	position:absolute;
+	z-index:1111;
+	top:1px;
+	right:83px;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    background-image: url(../images/free_shippingBmini.png);
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+    background-size: 20px auto;
+    padding-left: 33px;
+    padding-right: 7px;
+	cursor:pointer;
+	border-radius:4px;
+}
+#spedGratTop:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+#spedGratTop span{
+    color: rgba(255,255,255,0.6) !important;
+	font-size:inherit !important;
+}
+body:not(.paginaBlack):not(.darkMode):not(.product) #spedGratTop{
+	color:#FFF;
+}
+body.paginaBlack #spedGratTop,
+body.darkMode #spedGratTop,
+body.product #spedGratTop{
+	color:#FFF;
+}
+#spedGratTop img{
+	height:12px;
+	margin:-1px 4px;
+}
+@media only screen and (max-width: 780px){
+	#googleRece{
+		left: 4px;
+        right: auto !important;
+        padding: 0px 0px 0px 4px !important;
+        z-index: 0;
+        font-size: 14px;
+	}
+	.divisoreRating{
+		display:block;
+		height:1px;
+	}
+	body:not(.paginaBlack):not(.darkMode):not(.elenco) #googleRece{
+    	/*background-image: url(../_img/logo_gg.png), url(../images/stelleG.png) !important;*/
+		color:#000 !important;
+	}
+	.home #googleRece{
+		margin:3px;
+	}
+	#spedGratTop{
+		top: 103px;
+		right: 5px;
+		z-index: 0;
+		padding: 0 10px 0 35px;
+		border-radius: 16px;
+		background-position: 9px 8px;
+	}
+	#spedGratTop img{
+		height: 13px;
+		margin: 0 4px;
+		margin-top: -3px;
+		vertical-align: middle;
+	}
+	body:not(.paginaBlack):not(.darkMode) #spedGratTop{
+		background-image: url(../images/free_shippingNmini.png);
+		background-color: rgba(0,0,0,0.1);
+		color: #000 !important;
+	}
+	body.elenco #googleRece{
+		color: #FFF !important;
+	}
+	body.elenco #spedGratTop{
+		background-color: rgba(255,255,255,0.2) !important;
+	}
+	body:not(.paginaBlack):not(.darkMode) #spedGratTop span{
+		color: #000 !important;
+	}
+	body.paginaBlack #spedGratTop,
+	body.darkMode #spedGratTop{
+		background-color: #000;
+	}
+	#spedGratTop #flagSped img{
+		height:14px;
+	}
+}
+@media only screen and (max-width: 700px){
+	#googleRece{
+		top: 56px;
+	}
+	#spedGratTop{
+		top: 59px;
+	}
+}
+@media only screen and (max-width: 600px){
+	#spedGratTop #flagSped{
+		float:right;
+		margin-right:-5px;
+		margin-left:0px;
+	}
+}
+-->

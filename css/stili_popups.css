@@ -1,0 +1,144 @@
+<!--
+
+
+/* POPUP PUBBLICITARI */
+#popup_cont{
+	position:fixed;
+	z-index:1500;
+	padding:20px;
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.6);
+	transition:opacity 0.5s;
+	-webkit-transition:opacity 0.5s;
+	opacity:0;
+	width:1px;
+	height:1px;
+	top:-10px;
+	left:-10px;
+}
+.popupVis{
+	opacity:1 !important;
+	width:100% !important;
+	height:100% !important;
+	top:0px !important;
+	left:0px !important;
+}
+#popup{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	background-position:center center;
+	box-shadow:0px 0px 10px #000;
+	background-size:contain;
+	margin:0 auto;
+	transition:width 0.2s, height 0.2s, background-size 0.5s;
+	-webkit-transition:width 0.2s, height 0.2s, background-size 0.5s;
+}
+#chiudiPopup{
+	position:fixed;
+	width:32px;
+	height:32px;
+	top:10px;
+	right:-110px;
+	border-radius:16px;
+	background:url(../images/chZoom.png) center center no-repeat #000;
+	box-shadow:0px 0px 4px #000;
+	cursor:pointer;
+	z-index:1000;
+}
+#spegniPopup{
+	position:fixed;
+	width:170px;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	cursor:pointer;
+	z-index:1000;
+	color:#FFF;
+	font-size:13px;
+}
+.bannerCentrale{
+	background-color:rgba(255,255,255,0.6) !important;
+}
+.bannerCentrale #popup{
+	width:524px;
+	height:450px;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center center;
+	background-image:url(../images/bonus-mobilita-2020-Q.jpg);
+	background-color:#333;
+}
+.bannerCentrale #chiudiPopup{
+	right:calc((100% - 540px) / 2);
+}
+.bannerCentrale #spegniPopup{
+	top:20px;
+	right:calc((100% - 510px) / 2);
+	text-shadow: 0px 0px 3px #000;
+}
+.bannerFix{
+	height: 150px !important;
+    bottom: 0px;
+    padding: 0px !important;
+	top: auto !important;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+}
+.bannerFix #popup{
+	height:150px;
+	width:100%;
+	border-radius:0px !important;
+	background-color:#000 !important;
+}
+.bannerFix #chiudiPopup{
+	top: auto !important;
+    bottom: 150px;
+    right: 5px;
+    width: 100px;
+    border-radius: 5px 5px 0px 0px !important;
+    background-image: url(../images/frSM.png) !important;	
+	box-shadow:none !important;
+	height:20px !important;
+}
+.bannerFix #spegniPopup{
+	top:auto !important;
+	bottom:120px;
+	padding-left:5px !important;
+	text-align:left !important;
+}
+@media (max-width: 600px){
+	.bannerCentrale #popup{
+		width:calc(100% - 20px);
+		margin:10px;
+		height:auto !important;
+		padding-top:82% !important;
+	}
+	.bannerCentrale #chiudiPopup{
+		right:10px;
+	}
+	.bannerCentrale #spegniPopup{
+		background-color:#000;
+		border-radius:20px;
+		width:200px;
+		left:50%;
+		margin-left:-100px;
+	}
+	.bannerFix{
+		height: 130px !important;	
+	}
+	.bannerFix #popup{
+		height: 130px !important;	
+	    background-size: auto calc(100% - 25px) !important;
+   		background-position: bottom center !important;
+	}
+	.bannerFix #chiudiPopup{
+		bottom: 130px !important;	
+	}
+	.bannerFix #spegniPopup{
+		bottom: 101px !important;
+	}
+}
+
+-->

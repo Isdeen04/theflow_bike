@@ -1,0 +1,90 @@
+/* SLIDESHOW */
+
+#slideshow{
+	overflow:hidden;
+	background-color:#fcfbf9;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url(../images/loading.svg);
+	background-size:120px 120px;
+    margin-top: 97px;
+}
+#ss, #ss div, #slideshow{
+	height:485px;
+}
+#ss{
+	width:100%;
+	white-space:nowrap;
+	opacity:0;
+	-webkit-transition: margin-left .4s, opacity .4s;
+	transition:  margin-left .4s, opacity .4s;
+	z-index:-1;
+}
+#ss div{
+	display:inline-block;
+	width:100%;
+	background-position:center bottom, center top, center center;
+	background-size:auto, auto, cover;
+	background-repeat:repeat-x, repeat-x, no-repeat;
+	text-align:center;
+}
+#ss a{
+	display:inline-block;
+	margin-top:300px;
+	border:1px solid #FFF;
+	font-size:15px;
+	line-height:50px;
+	height:50px;
+	padding-left:25px;
+	padding-right:25px;
+	background-color:rgba(0,0,0,0.1);
+	text-decoration:none;
+	color:#FFF;
+	-webkit-transition: all 0.5s;
+	transition:  all 0.5s;
+	text-shadow:0px 0px 2px rgba(0,0,0,0.5);
+}
+#ss a:hover{
+	background-color:rgba(0,0,0,0.4) !important;
+	border-color:#FC0 !important;
+}
+
+#ss_palls{
+	z-index:1;
+	width:100%;
+	margin-top:-30px;
+	height:30px;
+	text-align:center;
+}
+#ss_palls div{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	border-radius:6px;
+	border:1px solid #FFF;
+	background-color:rgba(0,0,0,0.3);
+	box-shadow:0px 0px 2px #000;
+	margin:5px;
+	cursor:pointer;
+}
+.pallSel{
+	background-color:#FFF !important;
+}
+@media (max-width: 730px) and (min-width: 501px){
+	#ss, #ss div, #slideshow{
+		height:400px !important;
+	}
+}
+@media (max-width: 700px){
+	#slideshow{
+		margin-top: 53px;
+	}
+}
+@media (max-width: 500px){
+	#ss, #ss div, #slideshow{
+		height:400px !important;
+	}
+	#ss a{
+		margin-top:150px;
+	}
+}

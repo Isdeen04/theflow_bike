@@ -1,0 +1,624 @@
+<!--
+
+
+
+/* righe dei form (es. compile.php, profile.ph, ecc.) */
+.campi {
+	background-color: #FFFFFF;
+	margin: 0px;
+	height: 17px;
+	border: none;
+	padding-left:4px;
+}
+.formEt{
+	font-size: 14px !important;
+	float:left;
+	width:135px;
+	clear:left;
+	margin-top:2px;
+	margin-bottom:2px;
+	text-align:right;
+	font-style:italic;
+	opacity:0.8;
+	height:32px;
+	line-height:32px;
+	padding-right:5px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.formDt,
+.formDtCh{
+	float:right;
+	width:509px;
+	margin-top:2px;
+	margin-bottom:2px;
+	margin-left:4px;
+}
+.formDt,
+.formFr{
+	line-height:32px;
+}
+.formDtCh div:not(.tipiCliente) label{
+	height:32px;
+	line-height:32px;
+	display:inline-block;
+}
+.formDtCh div:not(.tipiCliente) label{
+	height:32px;
+	line-height:32px;
+	display:inline-block;
+}
+.formDt div:not(.tipiCliente) input[type='checkbox'],
+.formDt div:not(.tipiCliente) input[type='radio'],
+.formDtCh div:not(.tipiCliente) input[type='checkbox'],
+.formDtCh div:not(.tipiCliente) input[type='radio']{
+	vertical-align: middle;
+}
+.formDt div:not(.tipiCliente) input[type='radio'],
+.formDtCh div:not(.tipiCliente) input[type='radio']{
+	margin-top: -3px;
+}
+#FT_cont{
+	padding-bottom:10px;
+}
+#FT_choose{
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-left:20px;
+}
+.formDt input[type='text'], 
+.formDt input[type='password'], 
+.formDt input[type='hidden'], 
+.formDt input[type='email']{
+	width:509px;
+	border-radius:3px;
+	border:1px solid #AAA;
+	padding-left:5px;
+	
+	background-color:#ece3da;
+	height:32px;
+	line-height:32px;
+	box-shadow:0px 0px 1px rgba(0,0,0,0.25);
+	
+}
+.formDt textarea{
+	width:509px;
+	border-radius:3px;
+	border:1px solid #AAA;
+	padding:5px;
+	height:150px;
+	background-color:#ece3da;
+	box-shadow:0px 0px 1px rgba(0,0,0,0.25);
+	
+}
+.formDt select{
+	width:509px;
+	border-radius:3px;
+	border:1px solid #AAA;
+	background-color:#ece3da;
+	height:32px;
+	line-height:32px;
+	box-shadow:0px 0px 1px rgba(0,0,0,0.25);
+	padding-left: 2px;
+}
+.formFr{
+	background:url(../images/zoomFrGiB.png) no-repeat right center;
+	background-size:32px;
+	cursor:pointer;
+	padding-right:30px;
+}
+.formFrOp{
+	background-image:url(../images/zoomFrSuB.png) !important;
+}
+.PP{
+	display:none;
+}
+.PP .formDt{
+	height:200px;
+	background-color:#eee;
+	border-radius:4px;
+	border:1px solid rgba(0,0,0,0.13);
+	-webkit-overflow-scrolling: touch;
+	overflow-x: none;
+	overflow-y: auto;
+	margin-top:5px;
+	padding:20px;
+	float:right;
+}
+.PP *{
+	font-size:15px;
+	line-height:18px !important
+}
+.PPop{
+	display:block;
+}
+#ADV img{
+	border-radius:25px;
+	cursor:pointer;
+}
+#ADV img:not(.ADV_sel):hover{
+	border:4px solid #333;
+}
+#ADV img:not(.ADV_sel){
+	border:4px solid transparent;
+	filter: grayscale(100%);
+}
+#ADV img.ADV_sel{
+	border:4px solid #F00;
+}
+#comeconosciuti{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.formPulsanti{
+	float:left;
+	width:648px;
+	text-align:right;
+	margin-top:10px;
+}
+.formEtF{
+	float:left;
+	width:135px;
+	text-align:right;
+}
+.formDtF{
+	float:left;
+	width:509px;
+	padding-left:5px;
+}
+.formProvince{
+	width:255px !important;
+	float:left;
+}
+.scPae{
+	float:rigth;
+	text-align:right;
+}
+.noSpTr{
+	border:1px solid #F90;
+	border-radius:5px;
+	padding:8px;
+	padding-left:88px;
+	padding-top:12px;
+	box-shadow:0px 0px 5px #666;
+	background:url(../images/nospedizioni.png) no-repeat left center #FFFFCC;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#schBS{
+	padding:10px;
+	padding-left:15px;
+	text-align:left;
+	background-color:#DDD;
+	border-radius:6px;
+	margin-bottom:15px;
+	margin-top:10px;
+}
+#CodiceSconto{
+	margin-top:5px;
+	border:none;
+	border-radius:3px;
+	font-style:italic;
+	color:#999;
+	width:200px;
+	height:32px;
+	line-height:32px;
+}
+.campiOn{
+	font-style:normal !important;
+	color:#000 !important;
+}
+.etichette {
+	font-size: 14px;
+	color: #999999;
+	font-style: italic;
+}
+#divFatturazione:not(.showBill) > div/*:not(#CFrow)*/,
+#divFatturazione:not(.showItCods) > div.ItCodRow,
+#divDetrazione:not(.showDetr){
+	display:none;
+}
+
+.h2Buy{
+	margin-bottom: 20px;	
+}
+.aDati{
+	float:right;
+}
+.tipiCliente{
+	height: 38px;
+	display:inline-block;	
+}
+@media (min-width: 781px){
+	.h2Buy{
+		padding-left: 140px;	
+	}
+}
+@media (max-width: 780px){
+	.aBuy{
+		display:block;
+		margin-top:10px;
+		clear: both;
+        width: 100%;
+	}
+	.formEt{
+		font-style: italic;
+		text-align: left;
+		width: 100%;
+		clear: left;
+		margin-top: 10px;
+		padding-left: 8px;
+		line-height: 36px;
+		height: 28px;
+		font-size: 17px !important;
+		margin-bottom: -1px;
+	}
+	.formEt:not(.visEt){
+		display: none;
+	}
+	#formLogin .formEt{
+		display:none;
+	}
+	#noteMem{
+		display:none;
+	}
+	.formDt,.formDtCh{
+		width:100%;
+		font-size:15px;
+		margin-left:0px;
+	}
+	.formDt input[type='text'], 
+	.formDt input[type='hidden'], 
+	.formDt input[type='password'], 
+	.formDt input[type='email']{
+		width: calc(100% + 20px);
+		height: 46px !important;
+		padding-left: 10px;
+		margin-left: -10px;
+	}
+	.formDtCh input[type='checkbox'],
+	.formDt input[type='checkbox'],
+	.formDtCh input[type='radio'],
+	.formDt input[type='radio']{
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 0px !important;
+	}
+	.formDtCh .tipoPagamento:last-child{
+		border-bottom:none !important;
+	}
+	.formDtCh{
+		border-radius: 3px;
+		width: calc(100% + 20px);
+		margin-right: -10px;
+		padding: 2px 5px;
+	}
+	.formDtCh label{
+		width: calc(100% - 30px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: inline-block;
+	}
+	.formDt select{
+		width: calc(100% + 20px);
+		height: 46px !important;
+		padding-left: 10px;
+		margin-left: -10px;
+	}
+	.formDt textarea{
+		width: calc(100% + 20px);
+		padding-left: 10px;
+		margin-left: -10px;
+	}
+	.formPulsanti{
+		float:left;
+		width:100%;
+		text-align:right;
+		margin-top:10px;
+	}
+	.formEtF{
+		float:left;
+		width:10%;
+		text-align:right;
+	}
+	.formDtF{
+		float:left;
+		width:80%;
+		padding-left:5px;
+	}
+	.formProvince{
+		width:100% !important;
+	}
+	.scPae{
+		clear:both;
+		padding-top:10px;
+	}
+	.noSpTr{
+		border:1px solid #F90;
+		border-radius:5px;
+		padding:8px;
+		padding-top:12px;
+		box-shadow:0px 0px 5px #666;
+		background:url(../_img/nospedizioniMobile.png) no-repeat right top #FFFFCC;
+		margin-top:10px;
+		margin-bottom:20px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+	}
+	#ADV{
+	    overflow: hidden;
+		width: calc(100% + 60px);
+		margin-left: -30px;
+		overflow-x: auto;	
+	}
+	#schBS{
+		padding:10px;
+		padding-left:15px;
+		text-align:left;
+		background-color:#DDD;
+		border-radius:6px;
+		margin-bottom:15px;
+		margin-top:10px;
+	}
+	#CodiceSconto{
+		margin-top:5px;
+		border:none;
+		border-radius:3px;
+		font-style:italic;
+		color:#999;
+		width:200px;
+	}
+	.campiOn{
+		font-style:normal !important;
+		color:#000 !important;
+	}
+}
+@media (max-width: 560px){
+	button,
+	#pSubmit,
+	input[type="submit"]{
+		font-size:20px;
+		padding:14px !important;
+		padding-left:22px !important;
+		padding-right:22px !important;
+	}
+	input[type="text"], input[type="password"], select:not(#fOrd){
+		font-size:20px !important;
+	}
+	textarea{
+		font-size:20px !important;
+		line-height:32px !important;
+	}
+	.PP .formDt{
+		width:calc(100% + 60px);
+		margin-left:-30px;
+		margin-right:-30px;
+		border-radius:0px !important;
+		border-left:none !important;
+		border-right:none !important;
+		margin-bottom:20px;
+	}
+	.PP *{
+		font-size:17px !important;
+		line-height:20px !important;
+	}
+}
+@media (max-width: 480px){
+	.aDati{
+		display:block;
+		margin-top:10px;
+		clear: both;
+        width: 100%;
+		text-align:right;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PULSANTI SCELTA TIPO CLIENTE (in compile.php, profile.php) */
+.tipiCliente label{
+    display: block;
+    float: left;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 3px 11px;
+	line-height: 32px;
+}
+#fPrivato{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#fAzienda{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.pOff{
+	background-color:#DDD;
+	color:#999;
+}
+.pOn{
+	background-color:#3357cc;
+	color:#FFF;
+}
+
+
+
+
+
+
+
+
+
+/* PULSANTI */
+button, input[type='submit']{
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	background-color:#333;
+	border-radius:8px;
+	color:#FFF;
+	padding:13px;
+	padding-left:18px;
+	padding-right:18px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border:none;
+	cursor:pointer;
+	transition:background-color 0.5s;
+	-webkit-transition:background-color 0.5s;
+	box-shadow: 0px 0px 3px;
+}
+button:not(.errBtn):hover,
+input[type='submit']:not(.errBtn):hover{
+	background-color:#C00;
+}
+#pAnnulla, #pulsanteRivedi{
+	background-color:#e6dcbb;
+}
+.pLeggero{
+	background-color: #beb4aa !important;
+}
+.pGrosso{
+	padding: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    text-transform: uppercase;
+}
+#pAnnulla:hover,
+.pLeggero:hover,
+#pulsanteRivedi:hover{
+	background-color:#ccc19e;
+}
+#pSubmit, #pAnnulla{
+	float:right;
+	margin-left:10px;
+}
+.btnOff, 
+.btnOff:hover{
+	background-color:rgba(0,0,0,0.3) !important;
+	color:rgba(0,0,0,0.5) !important;
+}
+.btnAcq{
+	background-image:url(../images/carrelloB_a.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-size:auto;
+	padding-right:45px;
+}
+.preordBtn{
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	background-color:#2f56ae;
+	border-radius:5px;
+	display:inline-block;
+	color:#FFF !important;
+	padding:13px;
+	padding-left:18px;
+	padding-right:18px;
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border:none;
+	cursor:pointer;
+	transition:background-color 0.5s;
+	-webkit-transition:background-color 0.5s;
+	box-shadow: 0px 0px 3px;/* */
+}
+.preordBtn:hover{
+	background-color:#254282 !important;
+	color: #FFF !important;
+}
+.acqOff{
+	background-color:rgba(0,0,0,0.30) !important;
+	color:rgba(255,255,255,0.8) !important;
+	cursor:default !important;
+	opacity:0.5;
+}
+.acqM{
+	overflow:hidden !important;
+	height:60px !important;
+	width:60px !important;
+	background-position:center !important;
+	background-size:auto !important;
+	padding-right:60px !important;
+}
+.piuBtn{
+	width:32px;
+	height:32px;
+	background:url(../images/piu.png) center center no-repeat;
+	cursor:pointer;
+	display:inline;
+}
+.giuBtn{
+	width:32px;
+	height:32px;
+	background:url(../images/giu.png) center center no-repeat;
+	cursor:pointer;
+	display:inline;
+}
+.btnGuarda, .btnAnteprima{
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+.btnGuarda{
+	background-image:url(../images/guardaBtn.png);
+	background-position:10px center;
+	background-size:25px 22px;
+	height:22px;
+	line-height:22px;
+}
+.btnAnteprima{
+	background-image:url(../images/play.png);
+	background-position:left center;
+	height:42px;
+	line-height:42px;
+	cursor:pointer;
+}
+.btnAnteprima:hover{
+	background-image:url(../images/playOn.png);
+}
+.frCat{
+	padding-right:30px;
+	background-image:url(../images/frCat.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.dida{
+	text-decoration:none !important;
+	font-size:14px !important;
+	margin-top:0px !important;
+}
+.dida *{
+	text-decoration:none !important;
+	font-size:14px !important;
+}
+.mini{
+	font-size:12px !important;
+	line-height: normal;
+	display: inline-block;
+}
+
+.errCampo{
+	border-color: #C00 !important;
+    outline: 2px solid rgba(255, 0, 0, 0.2);
+}
+
+.errBtn{
+	opacity:0.1;
+	cursor:default !important;
+}
+
+
+-->

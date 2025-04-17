@@ -1,0 +1,257 @@
+<!--
+#piede{
+	margin-top:30px !important;
+	width:1050px;
+	margin:0 auto;
+}
+#piede_last{
+	width:100%;
+	padding-top:5px;
+	margin-top:20px;
+	border-top:1px solid rgba(0,0,0,0.1);
+}
+#piede_last a{
+	display:inline-block;
+	font-size:14px !important;
+	color:rgba(0,0,0,0.6);
+	line-height:24px;
+	text-decoration:none;
+	margin-left:5px !important;
+}
+#mappa_btn{
+	float:right;
+	padding-top:5px !important;
+}
+#piede_cont{
+	border-top:1px solid #b0aca3;
+	width:100%;
+	min-height:190px;
+	padding-bottom:100px;
+}
+#lingue_att{
+	margin-top:8px;
+	background:url(../images/fr_giu2.gif) no-repeat right center;
+	display:inline-block;
+	padding-right:25px;
+	cursor:pointer;
+	font-size:15px;
+	padding-left:5px;
+	line-height:32px;
+}
+#lingue_piede{
+	display:none;
+	margin-top:8px;
+}
+.visLi{
+	display:block !important;
+}
+#lingue_piede a{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.5);
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 12px;	
+	transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+}
+#lingue_piede a:hover{
+    background-color: rgba(0,0,0,0.5) !important;
+	color:#FFF !important;
+}
+.smPiede span{
+	display:none;
+}
+#copy{
+	font-size:12px !important;
+	color:rgba(0,0,0,0.6);
+	line-height:16px;
+	padding-left:100px;
+	min-height:90px;
+	background:url(../images/logoPiede.png) no-repeat left -25px;
+}
+#copy img{
+	vertical-align:middle;
+	margin-top:-5px !important;
+}
+#menu_piede{
+	text-align:right;
+	float:right;
+	/*padding-bottom:70px;
+	background:url(../_img/secure_payments.png);
+	background-position:left bottom;
+	background-size: auto 56px;
+	background-repeat:no-repeat;*/
+}
+#menu_piede div{
+	display:inline-block;
+	width:200px;
+	padding-left:20px;
+	border-left:1px solid #b0aca3;
+	text-align:left;
+	vertical-align: top;
+}
+#menu_piede a{
+	display:block;
+	height:20px;
+	font-size:14px !important;
+	text-decoration:none;
+	color:rgba(0,0,0,0.6);
+	transition:color 1s;
+	-webkit-transition:color 1s;
+}
+#menu_piede p:not(#payments){
+	display:block;
+	height:20px;
+	font-size:14px !important;
+	text-decoration:none;
+	color:rgba(0,0,0,0.8);
+	font-weight:bold;
+}
+#menu_piede a:hover{
+	color:rgba(0,0,0,0.8);
+}
+#menu_piede p#payments{
+	margin:0;
+	text-align:left;
+	cursor:pointer;
+}
+.noLinea{
+	border-left:none !important;
+}
+#partners{
+	padding-top:10px;
+	text-align:center !important;
+}
+#partners img{
+	opacity:0.7;
+	cursor:pointer;
+}
+#partners img:hover{
+	opacity:0.9 !important;
+}
+#social,
+#social2{
+	display: block;
+    margin-top: 24px;
+}
+#social2{
+	margin-bottom:20px;
+}
+#social img,
+#social2 img{
+	vertical-align: middle;
+	cursor:pointer;
+	transition:opacity 1s;
+	-webkit-transition:opacity 1s;
+}
+#social span,
+#social2 span{
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 26px;
+    margin: 0 10px;
+    height: 30px;
+}
+.fb{
+	margin-left:4px;
+	margin-right:0px;
+}
+@media (max-width: 1080px) and (min-width: 981px){
+	#piede_cont{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (max-width: 1080px){
+	#piede{
+		width:100%;
+	}
+}
+@media (max-width: 980px){
+	#menu_piede div{
+		width:150px;
+	}
+}
+@media (max-width: 980px) and (min-width: 781px){
+	#piede_cont{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (max-width: 780px){
+	#piede_cont{
+		padding:0px !important;
+		padding-left:30px;
+		padding-right:30px;
+	}
+	#piede{
+		width:100%;
+		margin-top:10px !important;
+		display:block;
+	}
+	#menu_piede{
+		width:100%;
+		float:none;
+		background-position:center bottom !important;
+	}
+	#menu_piede div{
+		display:block;
+		width:100% !important;
+		padding-left:0px !important;
+		border-left:none !important;
+	}
+	#menu_piede a,
+	#menu_piede p:not(#payments){
+		width:100%;
+		text-align:center;
+		font-size:18px !important;
+		height:40px;
+		line-height:40px;
+		border-bottom:1px solid rgba(0,0,0,0.1);
+	}
+	#menu_piede a{
+		background-color:rgba(255,255,255,0.2);
+	}
+	#menu_piede p:not(#payments){
+		margin-bottom:0px !important;
+		margin-top:0px !important;
+		background-image:url(../images/zoomFrGiB.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size:contain;
+		cursor:pointer;
+	}
+	#menu_piede p#payments{
+		margin-top:20px;
+		text-align:center;
+	}
+	#menu_piede a:last-child{
+		margin-bottom:20px;
+	}
+	.smPiede{
+		display:none;
+	}
+	.smPieOp{
+		background-image:url(../images/zoomFrSuB.png) !important;
+	}
+	#copy{
+		margin-bottom: 40px;
+		margin-top: 40px;
+		text-align: center;
+		background-position: center -30px;
+		padding-left: 0px !important;
+		padding-top: 55px;
+	}
+	#social{
+		margin-top:40px;
+		margin-bottom:40px;
+		text-align:center;
+	}
+	#piede_last{
+		padding:30px;
+		background-color: rgba(0,0,0,0.1);
+	}
+}
+-->

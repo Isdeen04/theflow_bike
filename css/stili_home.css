@@ -1,0 +1,436 @@
+<!--
+
+#boxHome_cont{
+	text-align:center;
+	width:100%;
+}
+#boxHome{
+	display:inline-block;
+	text-align:center;
+	max-width:1650px;
+	width:calc(100%);
+}
+
+.boxFoto{
+	display:inline-block;
+	vertical-align:top;
+	width:calc(50% - 40px);
+	text-align: right;
+	background-size:auto 216px;
+	background-position:center 150px;
+	background-repeat:no-repeat;
+	/*height:412px;*/
+	background-color:#FFF;/*#fcfbf9;*/
+	background-blend-mode: multiply;
+	margin: 20px;
+	border-radius:10px;
+	overflow:hidden;
+	box-shadow:0 0 5px rgba(0,0,0,0.6);
+}
+.labelFoto{
+	display:block;
+	font-size:47px;
+	text-align:left;
+	padding:110px 0 0px 5px;
+	background-color:#000;
+	color:#FFF !important;
+	line-height:28px;
+	background-repeat:repeat-x, no-repeat;
+	background-position:center -100px, center bottom;
+	background-size:auto 300px, cover;
+}
+.boxFoto h2{
+	text-align: center !important;
+	margin-top:0px;
+	display:inline-block;
+	vertical-align:middle;
+	height:40px;
+	line-height: 46px;
+	width:calc(100% - 80px);
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	
+}
+.frFotoSx,
+.frFotoDx{
+	display:inline-block;
+	vertical-align:middle;
+	width:40px;
+	height:40px;
+	background-position:center center;
+	background-repeat:no-repeat;
+    background-size: 192%;
+    opacity: 0.4;
+	cursor:pointer;
+}
+.frFotoSx:hover,
+.frFotoDx:hover{
+	opacity: 0.7 !important;
+}
+.frFotoSx{
+	background-image:url(../images/zoomFrSxB2.png);
+	margin-right:-10px;
+}
+.frFotoDx{
+	background-image:url(../images/zoomFrDxB2.png);
+}
+.cursore_box{
+	width: 0px;
+    background-color: #f00;
+    height: 1px;
+    margin-top: 0px;
+}
+.prezzo_box{
+	height:80px;
+	line-height:20px;
+	text-align:right;
+	padding-right:20px;
+	padding-top:20px;
+	font-weight:bold;
+}
+.prezzo_box b{
+	color: #C00;
+}
+.prezzo_box s{
+	font-weight:normal;
+}
+.marchio_box{
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size:auto 30px;
+	display:inline-block;
+    height: 62px;
+    padding-top: 27px;
+	margin-top:86px;
+}
+.marchio_box a{
+	background: #000;
+    color: #FFF;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.marchio_box a:hover{
+	background:#FFF !important;
+}
+.frProdsSx,
+.frProdsDx{
+	display:block;
+	width:50px;
+	height:385px;
+	background-position:center center;
+	background-repeat:no-repeat;
+    background-size: 192%;
+    opacity: 0.4;
+	cursor:pointer;
+	margin-top:-365px;
+	position:absolute;
+	background-color:rgba(0,0,0,0.7);
+}
+.frProdsSx:hover,
+.frProdsDx:hover{
+	opacity: 0.7 !important;
+}
+.frProdsSx{
+	background-image:url(../images/zoomFrSx.png);
+	left:0px;
+	border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
+}
+.frProdsDx{
+	background-image:url(../images/zoomFrDx.png);
+	right:0px;
+	border-radius: 100% 0% 0% 100% / 50% 50% 50% 50%;
+}
+#bannerHome{
+	width:100%;
+	height:150px;
+	background-repeat:no-repeat;
+	background-size:auto 150px;
+	background-position:center center;
+	background-image:url(../images/bonus-mobilita-2020-H.jpg);
+	background-color:#000;
+	padding:24px;
+	text-align:center;
+}
+
+@media (min-width: 781px){
+	#bannerHome{
+		cursor:pointer;
+		margin:30px 20px -30px 20px;
+		width:calc(100% - 40px);
+		border-radius:10px;
+		
+	}
+}
+.boxHome{
+	text-align:center;
+	margin-top: 20px !important;
+	width:100%;
+	max-width: 1240px;
+	display:inline-block;
+}
+.boxHome *{
+	-webkit-text-size-adjust:none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	-khtml-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+}
+.boxHome > div{
+	width:calc(50% - 11px);
+	height:300px;
+	margin-top:20px;
+	margin-bottom:20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#outlet_home{
+	text-align:center;
+}
+#outlet_home > div{
+	display:inline-block;
+	margin:24px;
+	border-radius:10px;
+	box-shadow:0 0 5px rgba(0,0,0,0.6);
+	overflow:hidden;
+}
+
+.cont_prods .prodsHome{
+	box-shadow:none !important;
+	mix-blend-mode: multiply;
+}
+#outlet_home .labelFoto{
+    background-size: auto;
+    background-position: right center, left center;
+}
+.cont_prods{
+	width:100%;
+	text-align:center;
+	white-space:nowrap;
+	overflow-x:auto;
+}
+#boxHome_cont.def #boxFoto_ebikes .cont_prods,
+#boxHome_cont.def #boxFoto_mtb .cont_prods,
+#boxHome_cont.def #boxFoto_road .cont_prods,
+#boxHome_cont.def #boxFoto_gravel .cont_prods{
+	min-height:349px;
+}
+#boxHome_cont.def .cont_prods:not(.full){
+	background-image:url(../images/loading2014.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.boxFoto .searchProds{
+	color: #000;
+    background: #EEE;
+    width: 200px;
+    height: 200px;
+    padding-top: 135px;
+    background-image: url(../images/zoomFrDxB2.png);
+    background-position: center center;
+	margin-top: 63px;
+}
+
+/*.boxFoto  .ottieniSconto{
+	padding:0px !important;
+}*/
+.boxFoto .searchProds:hover{
+    background: #D5D5D5 !important;
+	color:#000 !important;
+    background-image: url(../images/zoomFrDxB2.png) !important;
+    background-position: center center !important;
+}
+
+#marchi_home{
+	text-align:center;
+	padding-top:60px;
+	padding-bottom:20px;
+}
+#marchi_home > h2{
+	text-align:center;
+	color:#FFF;
+}
+#marchi_home > div > div{
+	display:inline-block;
+	vertical-align:top;
+	padding-bottom: 25px;
+}
+#marchi_home > div > div img{
+	mix-blend-mode:screen;
+}
+#marchi_home > div > div a{
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	padding:0 15px;
+	border-radius:7px;
+	color:#FFF;
+	border:1px solid rgba(255,255,255,0.3);
+}
+#marchi_home > div > div a:hover{
+	background-color:rgba(255,255,255,.1);
+}
+
+#features_home{
+	text-align:center;
+	background-color: #181817;
+    padding: 35px 0;
+}
+#features_home > h2{
+	text-align:center;
+	color:#FFF;
+}
+#features_home > div > div{
+	display:inline-block;
+	vertical-align:top;
+	color:#FFF;
+	margin:10px;
+	width:150px;
+}
+#features_home > div > div img{
+	mix-blend-mode:screen;
+}
+
+@media (min-width: 1351px){
+	#boxHome_cont{
+		margin-top: 50px !important;
+	}
+}
+@media (max-width: 1020px){
+	#bannerHome{
+		height:auto !important;
+		padding-top:14.91%;
+		background-size:cover !important;
+	}
+}
+/*@media (max-width: 900px) and  (min-width: 781px){
+	.boxFoto{
+		background-size: auto 160px !important;
+	}
+	.boxFoto h2{
+		font-size:20px;
+	}
+}*/
+@media (min-width: 1181px){
+	#boxHome_cont{
+		margin-top: 30px;
+		padding-left:25px;
+		padding-right:25px;
+	}
+	#pagina{
+		background-image:url(../images/traccia_gommaV.png), url(../images/f_action.png);
+		background-repeat:no-repeat;
+		background-position:right top, left bottom;
+	}
+}
+@media only screen and (max-width: 780px){
+	.home #pagina_cont{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	#bannerHome{
+		width:calc(100% + 60px);
+		margin-left:-30px;
+		margin-right:-30px;
+		margin-top:30px;
+		margin-bottom:-50px;
+		height:auto !important;
+		padding-top:23.33%;
+		background-size:cover !important;
+	}
+	.touch #ss_palls{
+		display:none !important;
+	}
+	#boxHome{
+		padding-top:2px;
+	}
+	.boxFoto{
+        margin: 0 !important;
+        border-radius: 0;
+    }
+	#marchi_home{
+		padding-bottom:40px;
+	}
+}
+@media only screen and (max-width: 1180px){
+	.boxFoto{
+		margin-bottom:2px !important;
+	}
+	.cursore_box{
+		height:2px !important;
+	}
+	.boxFoto h2{
+		width:calc(100% - 90px) !important;
+	}
+	.boxHome > div{
+		width:calc(100% + 60px);
+		margin-left:-30px;
+		margin-right:-30px;
+		margin-top:50px;
+		margin-bottom:37px !important;
+		display: block;
+	}
+	.labelFoto{
+		text-align:center;
+		margin-bottom:30px;
+		margin-top:-30px;
+	}
+	.boxFoto{
+		width:calc(100%);
+		margin:20px 0;
+	}
+}
+@media only screen and (max-width: 1180px) and (min-width: 781px){
+	.home #boxHome_cont{
+		padding-left:20px;
+		padding-right:20px;
+	}
+}
+@media (max-width: 500px){
+	.boxFoto{
+		background-size: auto 160px !important;
+		/*height: 358px !important;*/
+		background-position: top calc(50% + 32px) !important;
+		margin-top: 30px;
+		/*border-radius: 0;
+		margin: -2px -30px 0px -30px;
+		width: calc(100% + 60px);
+		border-bottom: 8px solid #000;
+		background-size: auto 160px !important;
+		height: 350px !important;
+		background-position:center calc(50% + 32px) !important;*/
+	}
+	.boxFoto h2{
+		font-size:20px;
+	}
+	.cursore_box{
+		margin-top:0px !important;
+	}
+	.frProdsSx,
+	.frProdsDx{
+		display:none;
+	}
+	.boxHome > div{
+		margin-bottom:81px !important;
+	}
+	.marchio_box{
+		width:calc(100% - 10px);
+		margin-right:5px;
+		margin-top:113px;
+		height:52px;	
+	}
+	.marchio_box a{
+		padding-left:10px;
+		padding-right:10px;
+	}
+}
+
+
+-->
